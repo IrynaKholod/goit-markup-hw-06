@@ -329,6 +329,11 @@ ul {
   fill: rgba(33, 150, 243, 1);
 }
 
+.form-group:focus-within .form-comment-input,
+.form-group:hover .form-comment-input {
+  border: 1px solid #2196f3;
+}
+
 .form-policy {
   display: flex;
   align-items: center;
@@ -369,7 +374,10 @@ ul {
   letter-spacing: 0.01em;
   text-align: left;
 }
+
 .form-comment-input {
+  display: block;
+  resize: none;
   width: 100%;
   padding: 11px 11px 12px 12px;
   border-radius: 4px;
@@ -400,7 +408,7 @@ textarea::placeholder {
   height: 15px;
 
   border-radius: 2px;
-  outline: 1px solid rgba(33, 33, 33, 1);
+  outline: 2px solid rgba(33, 33, 33, 1);
   outline-offset: -2px;
 
   display: flex;
@@ -786,6 +794,7 @@ button {
 }
 .contact {
   margin-right: 70px;
+  flex-grow: 1;
 }
 .footer {
   color: var(--secondary-botton-color);
@@ -847,11 +856,16 @@ address {
 .join .socials-icon {
   fill: currentColor;
 }
+
+.mail {
+  display: inline-flex;
+  margin-right: 12px;
+}
+
 .subscribe-form {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
 
   font-size: 16px;
   line-height: 1.25;
